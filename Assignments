@@ -1,0 +1,43 @@
+Ch 5 Programming Assignment:
+
+Ex 5.11(Find the Smallest Value)
+5.11 (Find the Smallest Value) Write an application that finds the smallest of several integers.
+Assume that the first value read specifies the number of values to input from the user.
+
+
+Ex 5.16(Bar Chart Printing Program)
+5.16 (Bar-Chart Printing Program) One interesting application of computers is to display
+graphs and bar charts. Write an application that reads five numbers between 1 and 30.
+For each number that’s read, your program should display the same number of adjacent asterisks.
+For example, if your program reads the number 7, it should display *******.
+Display the bars of asterisks after you read all five numbers.
+
+
+
+5.24 (Diamond-Printing Program) Write an application that prints the following diamond shape. You may use output statements that print a single asterisk (*), a single space or a single new-line character. Maximize your use of iteration (with nested for statements), and minimize the number of output statements.
+
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+
+Ex 5.24(Diamond Printing Program)
+
+Optional
+
+(Ex 5.17)(Calculating Sales)
+5.17 (Calculating Sales) An online retailer sells five products whose retail prices are as follows: Product 1, $2.98; product 2, $4.50; product 3, $9.98; product 4, $4.49 and product 5, $6.87. Write an application that reads a series of pairs of numbers as follows:
+
+product number
+
+quantity sold
+
+Your program should use a switch statement to determine the retail price for each product. It should calculate and display the total retail value of all products sold. Use a sentinel-controlled loop to determine when the program should stop looping and display the final results.
+
+(Ex5.25) (Modified Diamond Printing Program)
+5.25 (Modified Diamond Printing Program) Modify the application you wrote in Exercise5.24  to read an odd number in the range 1 to 19 to specify the number of rows in the diamond. Your program should then display a diamond of the appropriate size

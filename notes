@@ -1,0 +1,55 @@
+## Format for a while statement
+
+initialization;
+while (LoopCountinuationCondition) {
+    statements
+    increment;
+}
+
+## For statements are for counter-controlled iteration
+
+## While statement are for sentinel-controlled iteration
+
+##! Both can be used for either iterations but there are instances where a for statement cannot be represented by an equivalent while statement
+
+
+## Increment counter
+counter = counter + 1
+counter += 1
+++counter  // prefix applies the increment BEFORE the body is executed
+counter++  // postfix applies the increment AFTER the body is executed
+
+
+## Expressions can be contained within a for loop header
+    x = 2
+    y = 10
+
+    for (int j = x; j <= 4 * x * y; j += y / x)
+
+## is the same as:
+    for (int j = 2; j <= 80; j += 5)
+
+
+// Count from 1 - 100
+for (int i = 1; i <= 100; i++)
+
+// count from 100 to 1
+for (int i = 100; i >= 1; i--)
+
+// count from 7 - 77 in increments of 7
+for (int i = 7; i <= 77; i += 7)
+
+// count from 20 - 2 in increments of 2
+for (int i = 20; i >= 2; i -= 2)
+
+// count from 2 - 20 in increments of 3
+for (int i = 3; i <= 20; i += 3)
+
+// count from 99 - 0 in increments of 11
+for (int i = 99; i >= 0; i -= 11)
+
+## For readability limit the size of control-statement headers to a single line if possible
+
+## Avoid calculations in loops where the result never changes Enter those calculations BEFORE the start of the loop
+
+
