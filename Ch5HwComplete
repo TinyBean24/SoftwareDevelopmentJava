@@ -1,0 +1,175 @@
+// Ex 5.11 Find the Smallest Value
+CODE: 
+package HwComplete;
+import java.util.Scanner;
+public class SmallestInteger {
+	public static void main(String[] args) {
+		int count = 0;
+		int smallest = 0;
+		int largest = 0;
+		int number;
+
+		System.out.print("Enter number of integers: ");
+		Scanner input = new Scanner(System.in);
+		count = input.nextInt();
+
+		System.out.print("Enter integer: ");
+		number = input.nextInt();
+		smallest = number;
+
+		for (int i = 1; i < count; i++) {
+			System.out.print("Enter integer: ");
+			number = input.nextInt();
+
+			if (number > largest) {
+				largest = number;
+			}
+
+			if (number < smallest) {
+				smallest = number;
+			}
+		}
+		System.out.println("Smallest Integer is : " + smallest);
+	}
+}
+
+
+### OUTPUT
+/home/user01/.jdks/openjdk-18.0.2/bin/java -javaagent:/home/user01/.local/share/JetBrains/Toolbox/apps/IDEA-E/ch-0/222.3345.148/lib/idea_rt.jar=42801:/home/user01/.local/share/JetBrains/Toolbox/apps/IDEA-E/ch-0/222.3345.148/bin -Dfile.encoding=UTF-8 -classpath /home/user01/IdeaProjects/Ch5Hw/out/production/Ch5Hw HwComplete.SmallestInteger
+Enter number of integers: 8
+Enter integer: 12
+Enter integer: 24
+Enter integer: 17
+Enter integer: 9
+Enter integer: 15
+Enter integer: 11
+Enter integer: 20
+Enter integer: 18
+Smallest Integer is : 9
+
+Process finished with exit code 0
+
+
+#####################################################
+Ex 5.16(Bar Chart Printing Program)
+
+CODE:
+package HwComplete;
+
+import java.util.Scanner;
+public class BarChart {
+	public static void main(String[] args) {
+		int val1, val2, val3, val4, val5;
+
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter Integer: ");
+		val1 = input.nextInt();
+
+		System.out.print("Enter integer: ");
+		val2 = input.nextInt();
+
+		System.out.print("Enter integer: ");
+		val3 = input.nextInt();
+
+		System.out.print("Enter integer: ");
+		val4 = input.nextInt();
+
+		System.out.print("Enter integer: ");
+		val5 = input.nextInt();
+
+		String s = "*";
+		for (int i = 1; i < val1; i++){
+			System.out.print(s);
+		}
+		System.out.println();
+		for (int i = 1; i < val2; i++){
+			System.out.print(s);
+		}
+		System.out.println();
+		for (int i = 1; i < val3; i++){
+			System.out.print(s);
+		}
+		System.out.println();
+		for (int i = 1; i < val4; i++){
+			System.out.print(s);
+		}
+		System.out.println();
+		for (int i = 1; i < val5; i++){
+			System.out.print(s);
+		}
+	}
+}
+
+
+
+### OUTPUT: 
+/home/user01/.jdks/openjdk-18.0.2/bin/java -javaagent:/home/user01/.local/share/JetBrains/Toolbox/apps/IDEA-E/ch-0/222.3345.148/lib/idea_rt.jar=34545:/home/user01/.local/share/JetBrains/Toolbox/apps/IDEA-E/ch-0/222.3345.148/bin -Dfile.encoding=UTF-8 -classpath /home/user01/IdeaProjects/Ch5Hw/out/production/Ch5Hw TestFile
+Enter Integer: 10
+Enter integer: 25
+Enter integer: 20
+Enter integer: 30
+Enter integer: 15
+*********
+************************
+*******************
+*****************************
+**************
+
+Process finished with exit code 0
+
+
+#####################################################
+
+// 5.24. Diamond Printing Program
+package HwComplete;
+
+public class Diamond {
+	public static void main(String[] args) {
+		int count = 5;
+		String myStr = "*";
+		char symbol = myStr.charAt(0);
+
+		// First top triangle
+		for (int i = 1; i <= count; i++) {
+			for (int j = 1; j <= count - i; j++) { //
+				System.out.print(" ");
+			}
+			for (int j = 1; j <= i * 2 - 1; j++) {
+				System.out.print(symbol);
+			}
+			System.out.println();
+		}
+
+		//bottom triangle
+		for(int i = count - 1; i > 0; i--) {
+			for(int j = 1; j <= count - i; j++) {
+				System.out.print(" ");
+			}
+			for(int j = 1; j <= i * 2 - 1; j++) {
+				System.out.print(symbol);
+			}
+			System.out.println();
+		}
+	}
+}
+
+
+### OUTPUT: 
+/home/user01/.jdks/openjdk-18.0.2/bin/java -javaagent:/home/user01/.local/share/JetBrains/Toolbox/apps/IDEA-E/ch-0/222.3345.148/lib/idea_rt.jar=36713:/home/user01/.local/share/JetBrains/Toolbox/apps/IDEA-E/ch-0/222.3345.148/bin -Dfile.encoding=UTF-8 -classpath /home/user01/IdeaProjects/Ch5Hw/out/production/Ch5Hw HwComplete.Diamond
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+
+Process finished with exit code 0
+
+
+#####################################################
+
+
+
