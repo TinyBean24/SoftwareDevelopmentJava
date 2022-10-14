@@ -1,30 +1,29 @@
-import java.util.Scanner;
+// Fig. 7.6; BarChart.java
+// Bar chart printing program.
 
 public class BarChart {
-    public static void main(String[] args) {
-        int counter = 5;
-        int num1, num2, num3, num4, num5;
+	public static void main(String[] args) {
+		int[] array = {0, 0, 2, 0, 0, 0, 1, 2, 3, 4, 2, 1};
 
-        Scanner input1 = new Scanner(System.in);
-        Scanner input2 = new Scanner(System.in);
-        Scanner input3 = new Scanner(System.in);
-        Scanner input4 = new Scanner(System.in);
-        Scanner input5 = new Scanner(System.in);
+		System.out.println("Grade distribution: ");
 
-        System.out.print("Enter number: ");
-        System.out.print("Enter number: ");
-        System.out.print("Enter number: ");
-        System.out.print("Enter number: ");
-        System.out.print("Enter number: ");
+		// for each array element, output a bar of the chart
+		for (int counter = 0; counter < array.length; counter++) {
+			// output bar label ("00-09: ", ..., "90-99: ", "100: ")
+			if (counter == 10) {
+				System.out.printf("%5d: ", 100);
+			}
+			else {
+				System.out.printf("%02d-%02d: ",
+				    counter * 10, counter * 10 + 9);
+			}
 
-    }
+			// print bar of asterisks
+			for (int stars = 0; stars < array[counter]; stars++) {
+				System.out.print("*");
+			}
+
+			System.out.println();
+		}
+	}
 }
-
-/**
- * Ex 5.16(Bar Chart Printing Program)
- * 5.16 (Bar-Chart Printing Program) One interesting application of computers is to display
- * graphs and bar charts. Write an application that reads five numbers between 1 and 30.
- * For each number that’s read, your program should display the same number of adjacent asterisks.
- * For example, if your program reads the number 7, it should display *******.
- * Display the bars of asterisks after you read all five numbers.
- */
