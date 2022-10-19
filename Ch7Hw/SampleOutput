@@ -1,0 +1,112 @@
+***************Notes on 7.8 *******************************************************
+
+Part Array Name  Size	Initial numbers	  task 	  output
+a)     f         6+	any number        print 6th element
+b).    g	5	8		  print g
+c).    c	100	1 to 100	  print out total
+d)     a        11      any numbers       copy a to b (use loop) then print out a and b
+       b	34      any numbers
+
+e).    w        100     random between 20 & 80   Print out largest and smallest.
+************************************************************************************
+
+C:\USERS\TEMP>javac ArrayTask.java
+
+C:\USERS\TEMP>java ArrayTask
+
+a) The value of element 6 of array f is 6.
+
+b) The five elements of one-dimensional integer array g:
+g[0] = 8
+g[1] = 8
+g[2] = 8
+g[3] = 8
+g[4] = 8
+
+
+c) The total of the 100 elements of floating-point array c is 5050.00.
+
+d) The 11-element array a:
+a[0] = 6
+a[1] = 20
+a[2] = 38
+a[3] = 51
+a[4] = 58
+a[5] = 88
+a[6] = 2
+a[7] = 77
+a[8] = 79
+a[9] = 68
+a[10] = 29
+
+
+The array b after copying 1 1-element array a into the first portion of array b:
+
+b[0] = 6
+b[1] = 20
+b[2] = 38
+b[3] = 51
+b[4] = 58
+b[5] = 88
+b[6] = 2
+b[7] = 77
+b[8] = 79
+b[9] = 68
+b[10] = 29
+b[11] = 0
+b[12] = 0
+b[13] = 0
+b[14] = 0
+b[15] = 0
+b[16] = 0
+b[17] = 0
+b[18] = 0
+b[19] = 0
+b[20] = 0
+b[21] = 0
+b[22] = 0
+b[23] = 0
+b[24] = 0
+b[25] = 0
+b[26] = 0
+b[27] = 0
+b[28] = 0
+b[29] = 0
+b[30] = 0
+b[31] = 0
+b[32] = 0
+b[33] = 0
+
+
+e) Find the largest and smallest element using loop.
+The largest value is 79.82
+The smallest value is 20.23
+
+
+
+C:\USERS\TEMP>javac DiceRolling.java
+
+C:\USERS\TEMP>java DiceRolling
+
+Value           Frequency       Percentage
+2               958             3
+3               2034            6
+4               3039            8
+5               3944            11
+6               4992            14
+7               5871            16
+8               5016            14
+9               4151            12
+10              2978            8
+11              2061            6
+12              956             3
+
+The frequency of value 7 has highest percentage.
+
+C:\USERS\TEMP>
+G:\Teaching\CIS43-JAVA\Master Course\Chapter 7\Exercise\ex7_29\part a>java Fibon
+acciArray
+Fibonacci Series upto 20
+0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181
+
+

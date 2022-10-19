@@ -1,0 +1,35 @@
+Ch 7 Programming Assignment
+
+Ex 7.8 (Write Java Statements... a)... e) )
+7.8 Write Java statements to accomplish each of the following tasks:
+
+Display the value of element 6 of array f.
+
+Initialize each of the five elements of one-dimensional integer array g to 8.
+
+Total the 100 elements of floating-point array c.
+
+Copy 11-element array a into the first portion of array b, which contains 34 elements.
+
+Determine and display the smallest and largest values contained in 99-element floating-point array w.
+
+
+
+
+(Ex 7.17) (Dice Rolling)
+7.17 (Dice Rolling) Write an application to simulate the rolling of two dice.
+The application should use an object of class Random once to roll the first die and again to roll the second die.
+The sum of the two values should then be calculated. Each die can show an integer value from 1 to 6, so the sum of the
+values will vary from 2 to 12, with 7 being the most frequent sum, and 2 and 12 the least frequent. Figure7.28  shows
+the 36 possible combinations of the two dice. Your application should roll the dice 36,000,000 times.
+Use a one-dimensional array to tally the number of times each possible sum appears. Display the results in tabular format.
+
+(Ex 7.29a)  (Fibonacci Series)
+7.29 (Fibonacci Series) The Fibonacci series
+
+0, 1, 1, 2, 3, 5, 8, 13, 21, …
+
+begins with the terms 0 and 1 and has the property that each succeeding term is the sum of the two preceding terms.
+
+Write a method fibonacci(n) that calculates the nth Fibonacci number. Incorporate this method into an application
+that enables the user to enter the value of n.

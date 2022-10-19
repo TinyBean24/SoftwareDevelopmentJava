@@ -1,0 +1,128 @@
+1. Lists and tables of values can be stored in ARRAYS, and COLLECTIONS
+
+2. An array is a group of VARIABLES (called elements or components)
+   containing values that all have the same TYPE
+
+3. The ENHANCED FOR STATEMENT allows you to iterate through an array's elements
+   without using a counter
+
+4. The number used to refer to a particular array element is called the
+   element's INDEX (or subscript or position number)
+
+5. An array that uses two indices is referred to as a(n) TWO-DIMENSIONAL
+   array
+
+6. Use the enhanced for statement "for (double d : numbers)" through double
+   array numbers
+
+7. Command-line arguments are stored in AN ARRAY OF STRINGS, called ARGS by convention
+
+8. Use the expression "args.length" to receive the total number of arguments
+   in a command line. Assume that command-line arguments are stored in String[] args.
+
+9. Given the command "java MyClass test", the first command-line argument is TEST
+
+10. A(n) ELLIPSIS (...) in the parameter list of a method indicates that the method
+   can receive a variable number of arguments
+
+
+
+7.2 Determine whether each of the following is true or false. If false, explain why.
+
+1. An array can store many different types of values.
+    FALSE: An array can store only values of the same type
+
+2. An array index should normally be of type float.
+    FALSE: An array index must be an integer or an integer expression
+
+3. An individual array element that’s passed to a method and modified in that
+   method will contain the modified value when the called method completes
+   execution.
+    FALSE: A called method receives and manipulates a COPY of the value of such an
+           element, ,so modification does NOT affect the original value. If the REF
+           ERENCE of an array is passed to a method, however, modifications to the
+           array elements made in the called method are indeed reflected in the orig-
+           inal.
+
+    TRUE: A called method receives a copy of the reference of such an element, and
+          changes to the referenced object will be reflected in the original array
+          element.
+
+4. Command-line arguments are separated by commas.
+    FALSE: Command-line arguments are separated by white space
+
+
+
+7.3 Perform the following tasks for an array called fractions:
+
+1. Declare a constant ARRAY_SIZE that’s initialized to 10.
+    ## final int ARRAY_SIZE = 10;
+
+2. Declare an array with ARRAY_SIZE elements of type double, and initialize the elements to 0.
+    ## double[] fractions = new double[ARRAY_SIZE];
+
+3. Refer to array element 4.
+    ## fractions[4]
+
+4. Assign the value 1.667 to array element 9.
+    ## fractions[9] = 1.667;
+
+5. Assign the value 3.333 to array element 6.
+    ## fractions[6] = 3.333;
+
+6. Sum all the elements of the array, using a for statement. Declare the integer
+   variable x as a control variable for the loop.
+   ## double total = 0.0;
+      for (int x = 0; x < fractions.length; x++) {
+          total += fractions[x];
+      }
+
+
+7.4 Perform the following tasks for an array called table:
+
+1. Declare and create the array as an integer array that has three rows and
+   three columns. Assume that the constant ARRAY_SIZE has been declared to be 3.
+
+    ## int [][] table = new int[ARRAY_SIZE]
+    ## [ARRAY_SIZE];
+
+2. How many elements does the array contain?
+    ## Nine
+
+3. Use a for statement to initialize each element of the array to the sum of its
+   indices. Assume that the integer variables x and y are declared as control
+   variables.
+
+    ## for (int x = 0; x < table.length; x++) {
+           for(int y = 0; y < table[x].length; y++) {
+               table[x][y] = x + y;
+           }
+       }
+
+
+7.7 Find and correct the error in each of the following
+
+1. final int ARRAY_SIZE = 5;
+   ARRAY_SIZE = 10;
+
+    ##
+    Error: Assigning a value to a constant after it has been initialized
+    Correction: Assign the correct value to the constant in a "final int ARRAY_SIZE
+                declaration or declare another variable
+
+########
+2. int[] b = new int[10];
+   for (int i = 0; i <= b.length; i++) {
+       b[i];
+   }
+    ##
+    Error: Referencing an array element outside the bounds of the array (b[10])
+    Correction: Change the <= operator to <.
+
+########
+3.  int [][] a = {{1, 2}, {3, 4}};
+    a[1, 1] = 5;
+
+    ##
+    Error: Array indexing is performed incorrectly.
+    Correction: Change the statement to a[1][1] = 5;
