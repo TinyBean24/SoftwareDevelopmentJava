@@ -22,6 +22,7 @@ public class Days {
         myDay.setMonth(month);
         myDay.setDay(day);
         myDay.setYear(year);
+        myDay.setLeapYear(year);
 
         System.out.printf("%s %d is day %d of %d", myDay.getMonth(), myDay.getDay(), myDay.getTotalDays(month, day), myDay.getYear());
     }
