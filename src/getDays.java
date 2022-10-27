@@ -6,8 +6,9 @@ public class getDays {
     private int Days;
     private int totalDays;
     private int[] lMonths, sMonths;
+    private boolean isLeap;
     private final int[] daysPerMonth = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-    private final int[] leapDaysPerMonth = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    private final int[] leapDaysPerMonth = {0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
     public void getDay(int Month, int day, int year) {
         this.month = month;
@@ -15,14 +16,20 @@ public class getDays {
         this.year = year;
     }
 
-    public void setLeapYear(int year) {
-        boolean isLeap;
+    public void setLeapYearMonths(int year) {
+
         isLeap = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
         if (isLeap) {
             this.lMonths = this.leapDaysPerMonth;
+            this.isLeap = true;
         } else {
             this.lMonths = this.daysPerMonth;
+            this.isLeap = false;
         }
+    }
+
+    public boolean getLeapYearMonths() {
+        return isLeap;
     }
 
     public void setMonth(int Month) {
@@ -66,7 +73,7 @@ public class getDays {
     public int getTotalDays(int Month, int day) {
         this.Month = Month;
         for(int i = 1; i < this.Month; i++) {
-            this.Days += this.daysPerMonth[i];
+            this.Days += this.lMonths[i];
         }
         this.totalDays = this.Days + this.day;
         return this.totalDays;
