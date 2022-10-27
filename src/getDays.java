@@ -14,6 +14,12 @@ public class getDays {
         this.year = year;
     }
 
+    public void isLeapYear(int year) {
+        boolean isLeap;
+        isLeap = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+        return isLeap;
+    }
+
     public void setMonth(int Month) {
         this.month = switch(Month) {
             case 1 -> "January";
@@ -59,11 +65,5 @@ public class getDays {
         }
         this.totalDays = this.Days + this.day;
         return this.totalDays;
-    }
-
-    public static boolean isLeapYear(int year) {
-        boolean isLeap;
-        isLeap = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
-        return isLeap;
     }
 }
