@@ -32,7 +32,7 @@ public class getDays {
     }
 
     public String getMonth() {
-        return this.month;
+        return month;
     }
 
     public void setDay(int day) {
@@ -40,7 +40,16 @@ public class getDays {
     }
 
     public int getDay() {
-        return this.day;
+        return day;
+    }
+
+    public int getTotalDays(int Month, int day) {
+        this.Month = Month;
+        for(int i = 1; i < this.Month; i++) {
+            this.Days += this.daysPerMonth[i];
+            this.totalDays = this.Days + this.day;
+        }
+        return this.totalDays;
     }
 
     public void setYear(int year) {
@@ -48,20 +57,12 @@ public class getDays {
     }
 
     public int getYear() {
-        return this.year;
+        return year;
     }
 
     public static boolean isLeapYear(int year) {
         boolean isLeap;
         isLeap = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
         return isLeap;
-    }
-
-    public int getTotalDays() {
-        for (int i = 1; i < this.Month; i++) {
-            this.Days += this.daysPerMonth[i];
-        }
-        this.totalDays = this.Days + this.day;
-        return this.totalDays;
     }
 }

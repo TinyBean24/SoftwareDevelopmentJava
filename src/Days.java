@@ -2,13 +2,12 @@ import java.util.Scanner;
 public class Days {
     public static void main(String[] args) {
 
-        int day= 0, year = 0, choice = 0;
-        int month = 0;
+        int day= 0, year = 0, month = 0;
 
         Scanner input = new Scanner(System.in);
-        while (choice > 12 || choice <= 0 ) {
+        while (month > 12 || month <= 0 ) {
             System.out.print("Enter Month: ");
-            choice = input.nextInt();
+            month = input.nextInt();
         }
 
         while (day >= 32 || day <= 0 ) {
@@ -20,12 +19,10 @@ public class Days {
         year = input.nextInt();
 
         getDays myDay = new getDays();
-        myDay.setMonth(choice);
+        myDay.setMonth(month);
         myDay.setDay(day);
         myDay.setYear(year);
 
-
-
-        System.out.printf("%s %d is day %d of %d", myDay.getMonth(), myDay.getDay(), myDay.getTotalDays(), myDay.getYear());
+        System.out.printf("%s %d is day %d of %d", myDay.getMonth(), myDay.getDay(), myDay.getTotalDays(month, day), myDay.getYear());
     }
 }
