@@ -1,4 +1,4 @@
-// Fig. 8.6: Time2Test.java
+package Ch8;// Fig. 8.6: Time2Test.java
 // Overloaded constructors used to initialize Time2 objects.
 
 public class Time2Test {
