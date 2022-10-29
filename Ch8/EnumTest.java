@@ -1,4 +1,4 @@
-// Fig. 8.11: EnumTest.java
+package Ch8;// Fig. 8.11: EnumTest.java
 // Testing enum type Book.
 import java.util.EnumSet;
 
