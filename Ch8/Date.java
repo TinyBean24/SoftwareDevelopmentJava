@@ -1,6 +1,5 @@
 package Ch8;// Fig. 8.7: Date.java
 // Date class declaration.
-
 public class Date {
    private int month; // 1-12
    private int day; // 1-31 based on month
