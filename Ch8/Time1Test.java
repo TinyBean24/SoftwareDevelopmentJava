@@ -1,4 +1,4 @@
-// Fig. 8.2: Time1Test.java
+package Ch8;// Fig. 8.2: Time1Test.java
 // Time1 object used in an app.
 
 public class Time1Test {

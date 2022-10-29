@@ -1,4 +1,4 @@
-// Fig. 8.4: ThisTest.java
+package Ch8;// Fig. 8.4: ThisTest.java
 // this used implicitly and explicitly to refer to members of an object.
 
 public class ThisTest {

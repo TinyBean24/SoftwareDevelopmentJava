@@ -1,11 +1,11 @@
-// Fig. 8.9: EmployeeTest.java
+package Ch8;// Fig. 8.9: EmployeeTest.java
 // Composition demonstration.
 
-public class EmployeeTest {
+public class EmployeeTest1 {
    public static void main(String[] args) {
       Date birth = new Date(7, 24, 1949);
       Date hire = new Date(3, 12, 1988);
-      Employee employee = new Employee("Bob", "Blue", birth, hire);
+      Employee1 employee = new Employee1("Bob", "Blue", birth, hire);
 
       System.out.println(employee);
    } 

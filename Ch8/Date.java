@@ -1,4 +1,4 @@
-// Fig. 8.7: Date.java 
+package Ch8;// Fig. 8.7: Date.java
 // Date class declaration.
 
 public class Date {

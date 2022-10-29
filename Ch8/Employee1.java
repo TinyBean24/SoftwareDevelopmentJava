@@ -1,14 +1,15 @@
+package Ch8;
 // Fig. 8.8: Employee.java
 // Employee class with references to other objects.
 
-public class Employee {
+public class Employee1 {
    private String firstName;
    private String lastName;
    private Date birthDate;
    private Date hireDate; 
 
    // constructor to initialize name, birth date and hire date
-   public Employee(String firstName, String lastName, Date birthDate, 
+   public Employee1(String firstName, String lastName, Date birthDate,
       Date hireDate) {
       this.firstName = firstName;
       this.lastName = lastName;
