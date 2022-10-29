@@ -6,7 +6,6 @@ public class Date {
    private int year; // any year
    // my code
    private int Days; // variable to store total days prior to adding this.day
-   private int totalDays; // total days
 
    private static final int[] daysPerMonth = 
       {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
@@ -37,7 +36,7 @@ public class Date {
       this.day = day;
       this.year = year;
 
-      System.out.printf("Date object constructor for date %s%n", this);
+      // System.out.printf("Date object constructor for date %s%n", this);
    } 
    
    // return a String of the form month/day/year
@@ -50,12 +49,11 @@ public class Date {
       for (int i = 0; i < month; i++) {
          Days += daysPerMonth[i];
       }
-      totalDays = Days + day;
+      // total days
+      int totalDays = Days + day;
       return totalDays;
    }
 } 
-
-
 
 /**************************************************************************
  * (C) Copyright 1992-2018 by Deitel & Associates, Inc. and               *

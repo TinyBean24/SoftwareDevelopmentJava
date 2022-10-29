@@ -19,9 +19,8 @@ public class DateTest {
         year = input.nextInt();
 
         Date d1 = new Date(month, day, year);
+        int totalDays = d1.totalDays();
 
-        System.out.printf("%n%s, is day <%d> of %d", d1.toString(), d1.totalDays(), year);
-        System.out.printf("%n%s %d, %d is day <%d> of %d", months[month], day, year, d1.totalDays(), year);
-        System.out.printf("%n%s %d, %d is day <%d> of %d", months[month], day, year, d1.totalDays(), year);
+        System.out.printf("%n%s %d, %d is day <%d> of %d", months[month], day, year, totalDays, year);
     }
 }
