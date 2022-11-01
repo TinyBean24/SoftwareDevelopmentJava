@@ -67,7 +67,7 @@ public class Rectangle {
 
     // display info about the rectangle, width, length, perimeter and area.
     public String toString() {
-        return String.format("width: %.2f, length: %.2f, perimeter: %.2f, area: %.2f",
+        return String.format("Width: %.2f\nLength: %.2f\nPerimeter: %.2f\nArea: %.2f",
                 getWidth(), getLength(), getPerimeter(), getArea());
     }
 

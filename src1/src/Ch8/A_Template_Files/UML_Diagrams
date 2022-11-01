@@ -1,0 +1,87 @@
+Rectangle Class UML
+
+---------------------
+Rectangle
+---------------------
+-length:double
+-width:double
+---------------------
+Rectangle()
+Rectangle(l:double, w:double)
++getLength():double
++setLength(l:double)
++getWidth():double
++setWidth(w:double)
++getPerimeter():double
++getArea():double
++toString():String
+-------------------------
+
+
+SavingsAccount Class UML
+
+----------------------
+SavingsAccount
+---------------------
+-balance: double
+-annualInterestRate: static double
+---------------------
+SavingsAccount(b:double)
+SavingsAccount(b:double, r:double)
++getBalance():double
++setBalance(b:double)
++getAnnualInterestRate():double
++setAnnualInterestRate(r:double)
++CreditMonthlyInterest()
++getMonthlyInterestRate():double
++getMonthlyIntestAmount():double
++toString():String
+--------------------------
+
+Date class UML for Ex 8.8, should start with Example Fig 8.7
+-------------
+Date
+-------------
+-month:int
+-day:int
+-year:int
+------------
+Date()
+Date(m:int, d:int,y:int)
+getMonth():int
+setMonth(m:int)
+getDay():int
+setDay(d:int)
+getYear():int
+setYear(y:int)
+nextDay():void
+toString():String
+--------------------------
+
+
+
+
+Date class UML for Optional Ex 8.15
+
+----------------------------
+Date
+----------------------------
+-month:int
+-day:int
+-year:int
+----------------------------
+Date()
+Date(m:int, d:int, y:int)
+Date(mn:String, d:int, y:int)
+Date(ddd:int, y:int)
++getMonth():int
++getDay():int
++getYear():int
++setMonth(m:int)
++setDay(m:int)
++setYear(y:int)
++toString()
++toStringFullMonth()
++toStringDayOfYear()
+
+----------------------------

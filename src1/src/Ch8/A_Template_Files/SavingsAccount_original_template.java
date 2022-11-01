@@ -1,7 +1,7 @@
 package Ch8.A_Template_Files;// Exercise 8.6 Solution: SavingAccount
 // SavingAccount class definition
 
-public class SavingsAccount
+public class SavingsAccount_original_template
 {
 //Instance Variables
 	// interest rate for all accounts, hint: static

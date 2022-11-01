@@ -24,7 +24,7 @@ public class RectangleTest {
         // Changing Rectangle 1 informatmion using user input and the toString() method
         System.out.print("\nEnter value between 0 and 20 for length: ");
         rect1.setLength(input.nextDouble());
-        System.out.print("\nEnter value between 0 and 20 for width: ");
+        System.out.print("Enter value between 0 and 20 for width: ");
         rect1.setWidth(input.nextDouble());
 
         System.out.printf("\nNew Rectangle1 Information for Rectangle1\n%s",rect1.toString());
