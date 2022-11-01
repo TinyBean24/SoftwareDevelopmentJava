@@ -24,7 +24,7 @@ public class SavingsAccountTest {
         System.out.printf("\nSaver1 Bal: %.2f\n", saver1.getSavingsBalance());
         System.out.println(saver1.getAnnualInterestRate());
 
-        double k = saver1.getMonthlyInterest();
+        double k = saver1.getMonthlyInterestAmount();
         System.out.printf("%.2f\n", k);
         SavingsAccount.setAnnualInterestRate(.05);
         System.out.printf("Value of annual interest rate after change: %.2f\n", saver1.getAnnualInterestRate());

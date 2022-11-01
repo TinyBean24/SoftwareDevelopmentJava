@@ -7,6 +7,7 @@ public class SavingsAccount {
     // balance for currrent account
     private static double annualInterestRate;
     private double savingsBalance;
+    double monthlyInterest;
 
 // constructor
     // creates a new account with the specified balance
@@ -33,7 +34,7 @@ public class SavingsAccount {
     }
 
     // calculate monthly interest, hint: need to update the balance
-    public double getMonthlyInterest() {
+    public double getMonthlyInterestAmount() {
         double monthlyInterest = (savingsBalance * annualInterestRate) / 12;
         savingsBalance += monthlyInterest;
         return monthlyInterest;
