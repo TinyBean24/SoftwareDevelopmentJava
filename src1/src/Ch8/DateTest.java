@@ -19,10 +19,9 @@ public class DateTest {
         year = input.nextInt();
 
         Date d1 = new Date(month, day, year);
-        for (int i = 0; i <= 10; i++) {
-            d1.nextDay();
-            System.out.print(d1.nextDay());
-        }
+
+        d1.nextDay();
+
 
 
 

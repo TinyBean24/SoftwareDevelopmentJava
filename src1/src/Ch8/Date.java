@@ -16,21 +16,21 @@ public class Date {
         // check if month in range
         if (month <= 0 || month > 12) {
             throw new IllegalArgumentException(
-                "month (" + month + ") must be 1-12");
+                    "month (" + month + ") must be 1-12");
         }
 
         // check if day in range for month
         if (day <= 0 ||
                 (day > daysPerMonth[month] && !(month == 2 && day == 29))) {
             throw new IllegalArgumentException("day (" + day +
-                ") out-of-range for the specified month and year");
+                    ") out-of-range for the specified month and year");
         }
 
         // check for leap year if month is 2 and day is 29
         if (month == 2 && day == 29 && !(year % 400 == 0 ||
                 (year % 4 == 0 && year % 100 != 0))) {
             throw new IllegalArgumentException("day (" + day +
-                ") out-of-range for the specified month and year");
+                    ") out-of-range for the specified month and year");
         }
 
         // check if year is a 4 digit integer
@@ -43,7 +43,7 @@ public class Date {
         this.year = year;
 
         System.out.printf("Date object constructor for date %s%n", this);
-        }
+    }
 
     // return a String of the form month/day/year
     public String toString() {
@@ -60,13 +60,13 @@ public class Date {
         return totalDays;
     }
 
-    public int nextDay() {
-        day = this.day + String.valueOf(daysPerMonth[month]).length();
-//        for (int i = this.day; i <= String.valueOf(daysPerMonth[month]).length(); i++) {
-//            day = daysPerMonth[i] + 1;
-        return day;
+    public void nextDay() {
+        this.totalDays = daysPerMonth[month];
+        for (int i = day; i <= this.totalDays; i++) {
+            day += 1;
+            System.out.printf(" " + this.day);
+        }
     }
-
 }
 
 
