@@ -61,10 +61,23 @@ public class Date {
     }
 
     public void nextDay() {
+        int counter = 0;
         this.totalDays = daysPerMonth[month];
-        for (int i = day; i <= this.totalDays; i++) {
-            day += 1;
-            System.out.printf(" " + this.day);
+        while (counter < 40) {
+//        for (int i = day; i <= this.totalDays; i++) {
+            System.out.printf("Incremented Date %d/%d/%d\n", this.month, this.day, this.year);
+//            day++;
+            counter++;
+            if (day >= this.totalDays) {
+                this.month += 1;
+                if ( this.month > 12) {
+                    this.month = 1;
+                    this.year += 1;
+                }
+                day = 0;
+                this.totalDays = daysPerMonth[this.month];
+            }
+            day++;
         }
     }
 }

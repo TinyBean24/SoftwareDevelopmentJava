@@ -19,11 +19,7 @@ public class DateTest {
         year = input.nextInt();
 
         Date d1 = new Date(month, day, year);
-
         d1.nextDay();
-
-
-
 
 
 //        System.out.printf("%n%s, is day <%d> of %d", d1.toString(), d1.totalDays(), year);
