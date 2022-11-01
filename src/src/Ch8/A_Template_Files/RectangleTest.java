@@ -1,4 +1,4 @@
-// Exercise 8.4 Template: RectangleTest.java
+package Ch8.A_Template_Files;// Exercise 8.4 Template: RectangleTest.java
 // Program tests class Rectangle.
 
 public class RectangleTest

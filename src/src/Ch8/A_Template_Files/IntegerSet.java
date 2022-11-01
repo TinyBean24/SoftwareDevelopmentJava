@@ -1,4 +1,4 @@
-// Exercise 8.14 Template: IntegerSet.java
+package Ch8.A_Template_Files;// Exercise 8.14 Template: IntegerSet.java
 // IntegerSet class definition
 
 public class IntegerSet

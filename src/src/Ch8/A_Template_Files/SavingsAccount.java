@@ -1,4 +1,4 @@
-// Exercise 8.6 Solution: SavingAccount
+package Ch8.A_Template_Files;// Exercise 8.6 Solution: SavingAccount
 // SavingAccount class definition
 
 public class SavingsAccount

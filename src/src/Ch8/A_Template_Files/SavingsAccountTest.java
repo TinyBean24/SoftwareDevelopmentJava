@@ -1,4 +1,4 @@
-// Exercise 8.6 Template: SavingsAccountTest.java
+package Ch8.A_Template_Files;// Exercise 8.6 Template: SavingsAccountTest.java
 // Program that tests SavingsAccount class
 
 public class SavingsAccountTest

@@ -1,4 +1,4 @@
-// Exercise 8.14 Template: IntegerSetTest.java
+package Ch8.A_Template_Files;// Exercise 8.14 Template: IntegerSetTest.java
 // Program that tests IntegerSet
 import java.util.Scanner;
 

@@ -1,7 +1,7 @@
-// Exercise 8.4 Template: Rectangle.java
+package Ch8.A_Template_Files;// Exercise 8.4 Template: Rectangle.java
 // Definition of class Rectangle
 
-public class Rectangle
+public class Rectangle_original_template
 {
 // Instance Variables
 	// the length of the rectangle
