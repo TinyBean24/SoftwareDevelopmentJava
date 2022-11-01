@@ -34,8 +34,8 @@ public class RectangleTest {
                     break;
             }
         }
-
-
+    }
+}
 
 //        // Getting user input and assigning to variables
 //        Scanner input = new Scanner(System.in);
@@ -56,5 +56,5 @@ public class RectangleTest {
 //        rect1.setWidth(input.nextDouble());
 
 //        System.out.printf("\nNew Rectangle1 Information for Rectangle1\n%s",rect1.toString());
-    }
-}
+//    }
+//}
